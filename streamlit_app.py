@@ -58,6 +58,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 state_file = os.path.join(BASE_DIR, "data", "states_master.csv")
 district_file = os.path.join(BASE_DIR, "data", "districts_master.csv")
 
+print("BASE_DIR:", BASE_DIR)
+print("STATE FILE:", state_file)
+print("EXISTS:", os.path.exists(state_file))
+print("FILES IN DATA:", os.listdir(os.path.join(BASE_DIR, "data")))
+
 state_df, district_df = load_data(state_file, district_file)
 
 state_df = compute_metrics(state_df)
