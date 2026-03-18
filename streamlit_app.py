@@ -57,8 +57,8 @@ st.title("Analysis of Insurance data available in PMFBY portal")
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #state_file = os.path.join(BASE_DIR, "data", "states_master.csv")
 #district_file = os.path.join(BASE_DIR, "data", "districts_master.csv")
-state_file="pmfby_analyzer/data/states_master.csv"
-district_file = "pmfby_analyzer/districts_master.csv"
+state_file="PMFBY_analyzer/data/states_master.csv"
+district_file = "PMFBY_analyzer/data/districts_master.csv"
 #st.write("BASE_DIR:", BASE_DIR)
 #st.write("STATE FILE:", state_file)
 #st.write("EXISTS:", os.path.exists(state_file))
