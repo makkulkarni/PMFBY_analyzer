@@ -55,13 +55,14 @@ st.title("Analysis of Insurance data available in PMFBY portal")
 # LOAD DATA
 # =========================
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-state_file = os.path.join(BASE_DIR, "data", "states_master.csv")
-district_file = os.path.join(BASE_DIR, "data", "districts_master.csv")
-
-st.write("BASE_DIR:", BASE_DIR)
-st.write("STATE FILE:", state_file)
-st.write("EXISTS:", os.path.exists(state_file))
-st.write("FILES IN DATA:", os.listdir(os.path.join(BASE_DIR, "data")))
+#state_file = os.path.join(BASE_DIR, "data", "states_master.csv")
+#district_file = os.path.join(BASE_DIR, "data", "districts_master.csv")
+state_file="data/states_master.csv"
+district_file = "districts_master.csv"
+#st.write("BASE_DIR:", BASE_DIR)
+#st.write("STATE FILE:", state_file)
+#st.write("EXISTS:", os.path.exists(state_file))
+#st.write("FILES IN DATA:", os.listdir(os.path.join(BASE_DIR, "data")))
 
 state_df, district_df = load_data(state_file, district_file)
 
