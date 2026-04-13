@@ -235,4 +235,81 @@ with tab3:
         st.write(clust_trend)
         
 with tab4:
-    st.subheader("A portfolio analytics tool for evaluating agricultural insurance risk and profitability across India")    
+    st.subheader("A portfolio analytics tool for evaluating agricultural insurance risk and profitability across India")  
+    st.markdown(
+        "A portfolio analytics tool for evaluating agricultural insurance risk and profitability across India."
+    )
+
+    # --- Section 1 ---
+    with st.expander("Overview", expanded=True):
+        st.markdown("""
+        This application is a **data-driven underwriting analytics platform** built using historical data 
+        from crop insurance schemes in India, including PMFBY and WBCIS.
+
+        It supports insurers, policymakers, and analysts in evaluating performance and risk 
+        characteristics across states and districts.
+        """)
+
+    # --- Section 2 ---
+    with st.expander("Key Objectives"):
+        st.markdown("""
+        - Enable **granular assessment of insurance performance**
+        - Support **data-driven underwriting and pricing decisions**
+        - Identify **profitable, stable, and high-risk regions**
+        - Facilitate **portfolio design and diversification strategies**
+        """)
+
+    # --- Section 3 ---
+    with st.expander("Core Features"):
+        st.markdown("""
+        - Integration of multi-year data on:
+            - Premiums  
+            - Claims  
+            - Sum insured  
+
+        - Computation of key metrics:
+            - Loss ratio (burn rate)  
+            - Premium rate  
+            - Inter-annual variability  
+
+        - Interactive filters:
+            - Year  
+            - Season (Kharif / Rabi)  
+            - Scheme (PMFBY / WBCIS)  
+
+        - Multi-level analysis:
+            - State-level trends  
+            - District-level drilldowns  
+
+        - **Custom portfolio builder**:
+            - Create district clusters  
+            - Simulate combined performance  
+            - Evaluate risk-return
+        """)
+
+    # --- Section 4 ---
+    with st.expander("Use Cases"):
+        st.markdown("""
+        - Underwriting strategy and pricing decisions  
+        - Identification of stable vs volatile regions  
+        - Portfolio diversification and risk balancing  
+        - Performance benchmarking across schemes  
+        """)
+
+    # --- Section 5 ---
+    with st.expander("Data Source"):
+        st.markdown("""
+        Data is derived from publicly available records of:
+        - PMFBY (Pradhan Mantri Fasal Bima Yojana)  
+        - WBCIS (Weather Based Crop Insurance Scheme)  
+        """)
+
+    # --- Section 6 ---
+    with st.expander("Disclaimer"):
+        st.markdown("""
+        This tool is intended for **analytical and exploratory purposes only**.
+
+        Results are based on historical data and may not fully represent future risk. 
+        Users should combine this analysis with domain expertise and additional datasets 
+        before making underwriting decisions.
+        """)    
