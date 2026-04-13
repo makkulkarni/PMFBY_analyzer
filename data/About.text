@@ -1,0 +1,45 @@
+About the Application
+
+This application is a data-driven underwriting analytics platform built using historical data from crop insurance schemes in India, including PMFBY and WBCIS.
+
+It is designed to support insurers, policymakers, and analysts in evaluating the performance and risk characteristics of agricultural insurance portfolios across states and districts.
+
+Key Objectives
+Enable granular assessment of insurance performance across geographies
+Support data-driven underwriting and pricing decisions
+Identify profitable, stable, and high-risk regions
+Facilitate portfolio design and diversification strategies
+Core Features
+Integration of multi-year data on:
+Premiums
+Claims
+Sum insured
+Computation of key underwriting metrics:
+Loss ratio (burn rate)
+Premium rate
+Inter-annual variability
+Interactive filtering by:
+Year
+Season (Kharif / Rabi)
+Scheme (PMFBY / WBCIS)
+Multi-level analysis:
+State-level performance trends
+District-level drilldowns
+Custom portfolio builder:
+Create clusters of districts
+Simulate combined performance
+Evaluate risk-return characteristics
+Use Cases
+Underwriting strategy and pricing decisions
+Identification of stable vs volatile geographies
+Portfolio diversification and risk balancing
+Performance benchmarking across schemes and seasons
+Data Source
+
+Data used in this application is derived from publicly available records of:
+
+Government crop insurance schemes (PMFBY, WBCIS)
+Disclaimer
+
+This tool is intended for analytical and exploratory purposes only.
+Results depend on historical data quality and may not fully capture future risk dynamics.
