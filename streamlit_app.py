@@ -93,10 +93,11 @@ scheme = st.sidebar.selectbox(
     sorted(state_df["Scheme"].unique())
 )
 
-tab1, tab2, tab3 = st.tabs([
+tab1, tab2, tab3, tab4 = st.tabs([
     "📊 State Analysis",
     "📍 District Analysis",
-    "🧩 Cluster Builder"
+    "🧩 Cluster Builder",
+    "About"
 ])
 
 
@@ -232,4 +233,6 @@ with tab3:
             st.plotly_chart(fig_BR_clust, use_container_width=True)
         st.subheader("Cluster_info")            
         st.write(clust_trend)
-
+        
+with tab4:
+    st.subheader("A portfolio analytics tool for evaluating agricultural insurance risk and profitability across India")    
