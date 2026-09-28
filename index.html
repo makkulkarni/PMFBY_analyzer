@@ -1193,13 +1193,18 @@
         <div class="method-block">
           <h3>2. Actuarial Metrics Derivations</h3>
           <ul>
-            <li><strong>Total Premium ($P$):</strong> Sum of Farmer Share + State Subsidy + Central Government Subsidy.</li>
-            <li><strong>Burn Rate / Loss Ratio ($BR$):</strong> Ratio of total claims paid to total premium collected:
-              <br>$$BR = \frac{\text{Claims Paid}}{\text{Total Premium}}$$
-              A Burn Rate &lt; 100% indicates underwriting profitability; &gt; 100% represents underwriting deficit.
+            <li><strong>Total Gross Premium ($P$):</strong> Sum of Farmer Share + State Subsidy + Central Government Subsidy:
+              <br>$$P = \text{Farmer Share} + \text{State Subsidy} + \text{Central Subsidy}$$
             </li>
-            <li><strong>Premium Rate ($Rate$):</strong> Ratio of gross premium to Sum Insured:
-              <br>$$Rate = \frac{\text{Total Premium}}{\text{Sum Insured}}$$
+            <li><strong>Burn Rate / Claim Ratio ($\text{BR}$):</strong> Ratio of total claims paid to total gross premium collected:
+              <br>$$\text{BR} = \frac{\text{Claims Paid}}{\text{Total Gross Premium}}$$
+              A Burn Rate &lt; 100% indicates underwriting surplus; &gt; 100% represents underwriting deficit.
+            </li>
+            <li><strong>Gross Premium Rate ($\text{Rate}$):</strong> Ratio of gross premium to Sum Insured:
+              <br>$$\text{Rate} = \frac{\text{Total Gross Premium}}{\text{Sum Insured}} \times 100\%$$
+            </li>
+            <li><strong>Loss Cost / Pure Premium ($\text{LC}$):</strong> Ratio of total claims paid to Sum Insured:
+              <br>$$\text{LC} = \frac{\text{Claims Paid}}{\text{Sum Insured}} \times 100\%$$
             </li>
             <li><strong>Cup &amp; Cap Model (80:110):</strong> In recent tender rounds, states utilize risk-sharing corridors:
               <ul>
