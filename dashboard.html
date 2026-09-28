@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -745,6 +745,12 @@
       opacity: 1;
     }
   </style>
+
+  <!-- KaTeX for pristine mathematical typesetting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false});"></script>
+
 </head>
 <body>
 
@@ -1189,11 +1195,11 @@
           <ul>
             <li><strong>Total Premium ($P$):</strong> Sum of Farmer Share + State Subsidy + Central Government Subsidy.</li>
             <li><strong>Burn Rate / Loss Ratio ($BR$):</strong> Ratio of total claims paid to total premium collected:
-              <br>$$BR = rac{	ext{Claims Paid}}{	ext{Total Premium}}$$
+              <br>$$BR = \frac{\text{Claims Paid}}{\text{Total Premium}}$$
               A Burn Rate &lt; 100% indicates underwriting profitability; &gt; 100% represents underwriting deficit.
             </li>
             <li><strong>Premium Rate ($Rate$):</strong> Ratio of gross premium to Sum Insured:
-              <br>$$Rate = rac{	ext{Total Premium}}{	ext{Sum Insured}}$$
+              <br>$$Rate = \frac{\text{Total Premium}}{\text{Sum Insured}}$$
             </li>
             <li><strong>Cup &amp; Cap Model (80:110):</strong> In recent tender rounds, states utilize risk-sharing corridors:
               <ul>
@@ -1251,7 +1257,7 @@ const State = {
   selectedYears: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
   clusterDistricts: [],
   allYears: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
-  theme: 'dark'
+  theme: 'light'
 };
 
 /**
